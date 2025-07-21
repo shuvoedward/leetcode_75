@@ -1,12 +1,14 @@
 package main
 
+// 643. Maximum Average Subarray
+
 func findMaxAverage(nums []int, k int) float64 {
 	if k > len(nums) || k <= 0 {
 		return 0.0
 	}
 
 	sum := 0
-	for i := 0; i < k; i++ {
+	for i := range k {
 		sum += nums[i]
 	}
 
