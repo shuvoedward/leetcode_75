@@ -1,7 +1,5 @@
 package main
 
-import "math"
-
 func asteroidCollision(asteroids []int) []int {
 	if len(asteroids) == 0 {
 		return []int{}
@@ -24,34 +22,6 @@ func asteroidCollision(asteroids []int) []int {
 
 	}
 
-	return stack
-}
-
-func asteroidCollision2(asteroids []int) []int {
-	stack := []int{}
-
-	for _, asteroid := range asteroids {
-		for len(stack) > 0 && stack[len(stack)-1] > 0 && asteroid < 0 {
-			topAsteroid := stack[len(stack)-1]
-
-			if math.Abs(float64(asteroid)) > float64(topAsteroid) {
-				stack = stack[:len(stack)-1] // top asteroid explodes
-			} else if math.Abs(float64(asteroid)) == float64(topAsteroid) {
-				stack = stack[:len(stack)-1] // both explodes
-				asteroid = 0
-				break
-
-			} else {
-				// current asteroid is smaller than on top of the stack
-				asteroid = 0 // asteroid explodes
-				break
-			}
-		}
-
-		if asteroid != 0 {
-			stack = append(stack, asteroid)
-		}
-	}
 	return stack
 }
 
