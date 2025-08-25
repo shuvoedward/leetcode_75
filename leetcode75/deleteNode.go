@@ -15,7 +15,8 @@ func deleteNode(root *TreeNode, key int) *TreeNode {
 		// has one child or no child
 		if root.Left == nil {
 			return root.Right
-		} else if root.Right == nil {
+		}
+		if root.Right == nil {
 			return root.Left
 		}
 
@@ -28,7 +29,6 @@ func deleteNode(root *TreeNode, key int) *TreeNode {
 
 	}
 	return root
-
 }
 
 func findMin(root *TreeNode) *TreeNode {

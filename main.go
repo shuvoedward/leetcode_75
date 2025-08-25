@@ -25,7 +25,7 @@ func main() {
 	// success := 7
 
 	// result := successfulPairsBruteForce(spells, potions, int64(success))
-	result := minEatingSpeed([]int{3, 6, 7, 11}, 8)
+	result := isValidWordManual("234Adas")
 	fmt.Println(result)
 
 }
