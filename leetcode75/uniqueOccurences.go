@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 func uniqueOccurences(arr []int) bool {
 

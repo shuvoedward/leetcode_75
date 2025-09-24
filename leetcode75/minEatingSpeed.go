@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 func minEatingSpeed(piles []int, h int) int {
 	left, right := 1, piles[0]

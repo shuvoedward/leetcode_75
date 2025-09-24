@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 func searchBST(root *TreeNode, val int) *TreeNode {
 	stack := []*TreeNode{root}

@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 func maxOperations(nums []int, k int) int {
 	count := make(map[int]int)

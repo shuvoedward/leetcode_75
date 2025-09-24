@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 func findDifference(nums1, nums2 []int) [][]int {
 	result := make([][]int, 2)

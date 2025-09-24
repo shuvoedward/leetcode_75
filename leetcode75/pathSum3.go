@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 func pathSum3(root *TreeNode, targetSum int) int {
 	prefixSumFreq := map[int]int{0: 1}

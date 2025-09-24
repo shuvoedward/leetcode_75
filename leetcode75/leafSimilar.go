@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 func leafSimilar(root1, root2 *TreeNode) bool {
 

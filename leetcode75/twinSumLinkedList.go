@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 func pairSum(head *ListNode) int {
 	if head.Next.Next == nil {

@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 // type RecentCounter struct {
 // 	Counter int

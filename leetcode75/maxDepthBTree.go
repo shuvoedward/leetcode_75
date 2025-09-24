@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 type TreeNode struct {
 	Val   int
@@ -11,7 +11,7 @@ type Pair struct {
 	Depth int
 }
 
-func maxDepth(root *TreeNode) int {
+func MaxDepth(root *TreeNode) int {
 	if root == nil {
 		return 0
 	}
@@ -62,10 +62,10 @@ func maxDepthBFS(root *TreeNode) int {
 
 	for len(queue) > 0 {
 		length := len(queue)
-		node := queue[0]
-		queue = queue[1:]
 
-		for i := 0; i < length; i++ {
+		for range length {
+			node := queue[0]
+			queue = queue[1:]
 			if node.Left != nil {
 				queue = append(queue, node.Left)
 			}

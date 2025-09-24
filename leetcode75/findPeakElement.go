@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 func findPeakElement(nums []int) int {
 	var isPeak bool

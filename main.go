@@ -1,31 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"shuvoedward/leetcode/leetcode75"
+)
 
 func main() {
-	// list := &ListNode{
-	// 	Val: 1,
-	// 	Next: &ListNode{
-	// 		Val: 2,
-	// 		Next: &ListNode{
-	// 			Val: 7,
-	// 			Next: &ListNode{
-	// 				Val:  4,
-	// 				Next: nil,
-	// 			},
-	// 		},
-	// 	},
-	// }
+	// node1 := &leetcode.ListNode{Val: 2, Next: &leetcode.ListNode{Val: 4, Next: &leetcode.ListNode{Val: 3, Next: nil}}}
+	// node2 := &leetcode.ListNode{Val: 5, Next: &leetcode.ListNode{Val: 6, Next: &leetcode.ListNode{Val: 8, Next: &leetcode.ListNode{Val: 2, Next: nil}}}}
 
-	// sum := pairSum(list)
-	// fmt.Println(sum)
-
-	// spells := []int{5, 1, 3}
-	// potions := []int{1, 2, 3, 4, 5}
-	// success := 7
-
-	// result := successfulPairsBruteForce(spells, potions, int64(success))
-	result := isValidWordManual("234Adas")
+	result := leetcode75.CanPlaceFlowers([]int{1, 0, 0}, 2)
 	fmt.Println(result)
 
 }

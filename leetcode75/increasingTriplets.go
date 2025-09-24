@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 func increasingTriplet(nums []int) bool {
 	// 2, 5, 4, 0, 6

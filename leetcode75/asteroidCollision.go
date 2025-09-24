@@ -1,6 +1,6 @@
-package main
+package leetcode75
 
-func asteroidCollision(asteroids []int) []int {
+func AsteroidCollision(asteroids []int) []int {
 	if len(asteroids) == 0 {
 		return []int{}
 	}
@@ -26,7 +26,7 @@ func asteroidCollision(asteroids []int) []int {
 }
 
 // alive is much better than asteroid = 0
-func asteroidCollision3(asteroids []int) []int {
+func AsteroidCollision3(asteroids []int) []int {
 	var stack []int
 
 	for _, asteroid := range asteroids {

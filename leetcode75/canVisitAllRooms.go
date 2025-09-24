@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 func canVisitAllRoomsBFS(rooms [][]int) bool {
 	n := len(rooms)

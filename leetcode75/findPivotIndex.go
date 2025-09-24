@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 func pivotIndex(nums []int) int {
 	total := 0

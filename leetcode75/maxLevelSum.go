@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 func maxLevelSum(root *TreeNode) int {
 	if root == nil {

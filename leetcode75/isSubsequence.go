@@ -1,4 +1,4 @@
-package main
+package leetcode75
 
 func isSubsequence(s, t string) bool {
 	i, j := 0, 0
