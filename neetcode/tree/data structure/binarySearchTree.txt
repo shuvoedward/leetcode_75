@@ -1,0 +1,34 @@
+Binary Search Trees
+Binary Trees vs Binary Search Trees
+Binary Search Trees (BST) are a variation of binary trees 
+with the addition of a sorted property. The property is that 
+every node in the left subtree is smaller than the root and 
+every node in the right subtree is greater than the root.
+
+This is a recursive property, meaning that it applies to
+every node in the tree. This property is analogous to having a sorted array.
+
+
+Motivation
+With BSTs we can search for values in 
+
+O(log n) time just like with a sorted array.
+
+BSTs are often preferred over sorted arrays because they allow for insertion and deletion in 
+O(log n) time. This is not possible with sorted arrays, which require 
+O(n) time for these operations.
+
+
+Time Complexity
+If we have a balanced binary tree, our search algorithm will run in 
+
+O(log n) time. Balanced binary tree means that the height of the left-subtree
+is equal to the height of the right-subtree, or there is a difference of 1.
+
+
+In a balanced tree, we can eliminate half the nodes each time, which results in 
+
+O(log n), for reasons we discussed in the merge sort and binary search lessons.
+
+In the worst case we have a skewed tree, where the height of the tree is equal 
+to the number of nodes. In this case, the time complexity will be O(n).
