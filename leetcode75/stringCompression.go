@@ -2,7 +2,7 @@ package leetcode75
 
 import "fmt"
 
-func compress(chars []byte) int {
+func Compress(chars []byte) int {
 	n := len(chars)
 	write := 0 // Position to write compressed character
 	read := 0  // position to read characters
